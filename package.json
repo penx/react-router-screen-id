@@ -1,0 +1,24 @@
+{
+  "name": "base-react-component",
+  "version": "0.0.1",
+  "description": "Base project I use for creating distributable React components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/penx/base-react-component.git"
+  },
+  "keywords": [
+    "Base",
+    "React",
+    "Component"
+  ],
+  "author": "Alasdair McLeay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/penx/base-react-component/issues"
+  },
+  "homepage": "https://github.com/penx/base-react-component#readme"
+}
