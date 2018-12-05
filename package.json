@@ -6,6 +6,7 @@
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
   "scripts": {
+    "start": "npm run storybook",
     "build": "npm run build:lib && npm run build:es",
     "build:lib": "rimraf lib && copyup \"./src/**/*.scss\" ./lib && babel src -d lib --source-maps",
     "build:es": "rimraf es && copyup \"./src/**/*.scss\" ./es && cross-env BABEL_ENV=es babel src -d es --source-maps",
