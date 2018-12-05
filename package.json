@@ -1,7 +1,7 @@
 {
   "name": "base-react-component",
   "version": "0.0.1",
-  "description": "Base project I use for creating distributable React components",
+  "description": "Base project for creating distributable React components",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,7 +11,9 @@
     "build:es": "rimraf es && copyup \"./src/**/*.scss\" ./es && cross-env BABEL_ENV=es babel src -d es --source-maps",
     "test": "jest && eslint ./src",
     "eslint": "eslint ./src",
-    "jest": "jest"
+    "jest": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -50,8 +52,13 @@
     "@babel/plugin-transform-runtime": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^4.0.12",
+    "@storybook/addon-links": "^4.0.12",
+    "@storybook/addons": "^4.0.12",
+    "@storybook/react": "^4.0.12",
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
     "babel-plugin-add-module-exports": "^1.0.0",
     "babel-plugin-react-remove-prop-types": "^3.0.0",
     "copyfiles": "^2.1.0",
@@ -63,6 +70,7 @@
     "eslint-plugin-react": "^7.11.1",
     "jest": "^23.6.0",
     "react": "^16.6.0",
+    "react-dom": "^16.6.3",
     "rimraf": "^2.6.2"
   },
   "peerDependencies": {
@@ -70,5 +78,6 @@
   },
   "directories": {
     "lib": "lib"
-  }
+  },
+  "dependencies": {}
 }
