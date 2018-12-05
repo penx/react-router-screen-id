@@ -1,7 +1,10 @@
-import example from '.';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-describe('example', () => {
-  it('is an example', () => {
-    expect(example === 'example');
-  });
+import Component from '.';
+
+it('renders without crashing', () => {
+  const div = document.createElement('div');
+  ReactDOM.render(<Component />, div);
+  ReactDOM.unmountComponentAtNode(div);
 });
