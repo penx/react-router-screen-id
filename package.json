@@ -1,6 +1,6 @@
 {
   "name": "react-router-screen-id",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Base project for creating distributable React components",
   "main": "lib/index.js",
   "module": "es/index.js",
