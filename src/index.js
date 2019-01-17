@@ -23,7 +23,6 @@ class ScreenIdProvider extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.props);
     const { history } = this.props;
     this.unlisten = history.listen((location) => {
       this.setState((prevState) => {
